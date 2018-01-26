@@ -1,0 +1,46 @@
+<?php
+  if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+  } else {
+    $id = $_POST['id'];
+  }
+
+  $bibli = file('./biblio.txt');
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if ($_POST['choix'] == "oui") {
+      //Lit le fichier et renvoie le résultat dans un tableau
+      foreach ($bibli as $key => $value) {
+        $v = trim($value);
+        if ($v == $id) {
+          for ($i=$key; $i <= $key+10; $i++) {  //parcourt les lignes à supprimer qui suivent la ligne de l'id
+            unset($bibli[$i]);     
+          }
+          break; // pour éviter de parcourir le reste de $bibli si l'id a déjà été trouvée
+        }
+      }
+      file_put_contents('./biblio.txt', ''); // écrase le contenu du fichier
+      foreach ($bibli as $key => $value) {
+        file_put_contents('./biblio.txt', $value , FILE_APPEND); // réécriture du tableau $bibli dans le fichier biblio.txt sans les lignes qui ont été supprimées 
+      }
+    }
+    header("Location: index.php");
+    exit;
+  }
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Supprimer une oeuvre</title>
+  </head>
+  <body class="ui container" style="padding-top:2rem">
+    <h1 class="ui header">Supprimer une oeuvre</h1>
+    <form class="ui form" action="delete.php" method="post">
+      <input type="hidden" name="id" value="<?= $id ?>">
+      <input type="radio" name="choix" value="oui"><label>OUI</label>
+      <input type="radio" name="choix" value="non"><label>NON</label><br>
+      <button class="ui blue button">Enregistrer</button>
+    </form>
+  </body>
+</html>

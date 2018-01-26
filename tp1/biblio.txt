@@ -1,0 +1,45 @@
+hunt1999ppj
+The Pragmatic Programmer
+Hunt, A. et Thomas, D.
+1999
+Addison-Wesley Professional
+1
+https://pragprog.com/book/tpp/the-pragmatic-programmer
+https://imagery.pragprog.com/products/59/tpp_xlargecover.jpg
+* * *
+gamma1995dpe
+Design patterns: Elements of Reusable Object-Oriented Software
+Gamma, E. and Helm, R. and Johnson, R. and Vlissides, J.
+1995
+Addison-Wesley
+
+https://www.amazon.ca/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+https://qph.ec.quoracdn.net/main-qimg-e966f479b74b12155f6a6ebdff1999cd-c
+* * *
+fowler1999rid
+Refactoring: Improving the Design of Existing Code
+Fowler, M.
+1999
+Addison-Wesley Professional
+
+https://www.amazon.ca/dp/B007WTFWJ6/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+
+* * *
+era22her
+Héritage, Tome 1 : Eragon
+Christopher Paolini 
+2002
+Bayard Jeunesse
+1
+http://booksbuddy.club/download/B01HSJJBXW-lheritage-tome-1-eragon
+http://ecx.images-amazon.com/images/I/51X6YV7W1XL.jpg
+* * *
+mis009vh
+Les Misérables
+Victor Hugo
+1862
+Galimar
+1
+http://www.alalettre.com/victor-hugo-oeuvres-miserables.php
+https://images-na.ssl-images-amazon.com/images/I/51P01h3DZtL._SX300_BO1,204,203,200_.jpg
+* * *
